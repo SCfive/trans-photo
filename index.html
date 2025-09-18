@@ -390,7 +390,7 @@
             </div>
         </div>
         
-        <div class="styleSection" id="styleSection" style="display: none;">
+        <!-- <div class="styleSection" id="styleSection" style="display: none;">
             <h2 class="sectionTitle">选择风格</h2>
             <div class="styleOptions">
                 <div class="styleOption selected" data-style="art">
@@ -418,7 +418,7 @@
                     <div class="styleDesc">为图片添加复古滤镜</div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <div class="actionSection" id="actionSection" style="display: none;">
             <div style="display: flex; justify-content: center; margin-bottom: 12px;">
@@ -594,8 +594,8 @@
                     },
                     body: JSON.stringify({
                         model: 'doubao-seededit-3-0-i2i-250628',
-                        prompt: '改成爱心形状的泡泡',
-                        image: previewUrl,
+                        prompt: '请生成一幅对应的宫崎骏漫画风格图片',
+                        image: "https://ark-project.tos-cn-beijing.volces.com/doc_image/seededit_i2i.jpeg",
                         response_format: 'url',
                         size: 'adaptive',
                         seed: 21,
