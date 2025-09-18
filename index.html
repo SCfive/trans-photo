@@ -12,7 +12,6 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-
         
         .container {
             padding: 20px;
@@ -587,7 +586,7 @@
             
             try {
                 // 调用API进行图片转换
-                const response = await fetch('https://ark.cn-beijing.volces.com/api/v3/images/generations', {
+                const response = await fetch('http://192.168.1.4:5000/api/generate-image', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -596,7 +595,7 @@
                     body: JSON.stringify({
                         model: 'doubao-seededit-3-0-i2i-250628',
                         prompt: '请生成一幅对应的宫崎骏漫画风格图片',
-                        image: "https://ark-project.tos-cn-beijing.volces.com/doc_image/seededit_i2i.jpeg",
+                        image: previewUrl,
                         response_format: 'url',
                         size: 'adaptive',
                         seed: 21,
